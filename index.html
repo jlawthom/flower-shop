@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Honey Shed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: fantasy;
+      background-color: #fff;
+      color: #3b2f2f;
+    }
+    header {
+      background-color: #f2d6b3;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff0dc;
+      padding: 0.5rem 0;
+      gap: 1rem;
+      font-size: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3b2f2f;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      /* background: url('flowerEggs.png') no-repeat center center/cover; */
+      background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ), url('flowerEggs.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #4a3d34;
+      /* opacity: 0.5; */
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin: 0 0 1rem;
+      font-family: cursive;
+    }
+    .section {
+      padding: 1.5rem 1rem;
+    }
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .product h4 {
+      margin: 0 0 0.5rem;
+    }
+    footer {
+      background-color: #f2d6b3;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (min-width: 600px) {
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="flowerShopLogo.png" alt="The Honey Shed Logo">
+    <!-- <h1>The Honey Shed</h1> -->
+  </header>
+
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Fresh Flowers</h2>
+    <h2>&</h2>
+    <h2>Farm Goodies</h2>
+    <p>Hand-tied blooms, garden-grown herbs, and eggs from happy hens.</p>
+  </section>
+
+  <section class="section" id="shop">
+    <h3>Our Favourites</h3>
+    <div class="products-grid">
+      <div class="product">
+        <h4>Bloom & Breakfast Box</h4>
+        <p>Fresh posy + 6 farm eggs – £12</p>
+      </div>
+      <div class="product">
+        <h4>Dried Posy Bundle</h4>
+        <p>Long-lasting dried flowers – £8</p>
+      </div>
+      <div class="product">
+        <h4>Garden Herb Mix</h4>
+        <p>Thyme, rosemary & mint – £4</p>
+      </div>
+      <div class="product">
+        <h4>Subscription Box</h4>
+        <p>Weekly seasonal deliveries – from £10/week</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Hi, I'm Honey. I run a tiny backyard flower & egg business with my chickens and garden. Everything is homegrown, hand-tied, and full of love.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Order & Contact</h3>
+    <p>DM us on Instagram <strong>@thehoneyshed</strong> or email <strong>orders@thehoneyshed.co.uk</strong></p>
+    <p><a href="https://forms.gle/your-order-form" target="_blank">Click here to place an order</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Honey Shed. Handmade in the Rhondda Valleys.</p>
+  </footer>
+</body>
+</html>
